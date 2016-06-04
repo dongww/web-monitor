@@ -32,6 +32,11 @@ class DbDetector implements DetectorInterface
         $this->connection = DriverManager::getConnection($this->connectionParams, $config);
     }
 
+    public function getConnectionParams()
+    {
+        return $this->connectionParams;
+    }
+
     /**
      * @param ResourceInterface $resource
      *
@@ -71,6 +76,10 @@ ERROR MESSAGE: %s
             );
         }
 
-        return new DbDetectorResponse($successful, $message);
+        return new DbDetectorResponse(
+            $successful,
+            $message,
+            $this->connectionParams
+        );
     }
 }

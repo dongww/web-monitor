@@ -7,12 +7,12 @@ $connectionParams = [
     'dbname'   => 'man875',
     'user'     => 'db_user',
     'password' => 'z5J9OT0urtbfVuRuViK7',
-    'host'     => '10.201.2.13:33061',
+    'host'     => '10.201.2.13:3306',
     'driver'   => 'pdo_mysql',
 ];
 
-$monitor = new DbDetector($connectionParams);
+$detector = new DbDetector($connectionParams);
 
-$response = $monitor->probe();
+$response = $detector->probe();
 
 echo $response->getMessage();
