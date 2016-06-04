@@ -2,7 +2,7 @@
   "name": "dongww/web-monitor",
   "type": "library",
   "license": "MIT",
-  "description": "数据库封装。",
+  "description": "一套 PHP 类库，用来监测 API 接口、数据库连接、网页等资源的状况。",
   "autoload": {
     "psr-4": {
       "": "src"
