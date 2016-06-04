@@ -17,7 +17,7 @@ interface DetectorInterface
      *
      * @param  array            $options
      *
-     * @return Response
+     * @return ResponseInterface
      */
-    public function probe(ResourceInterface $resource, array $options = []);
+    public function probe(ResourceInterface $resource = null, array $options = []);
 }
