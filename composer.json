@@ -1,4 +1,8 @@
 {
+  "name": "dongww/web-monitor",
+  "type": "library",
+  "license": "MIT",
+  "description": "数据库封装。",
   "autoload": {
     "psr-4": {
       "": "src"
@@ -8,7 +12,9 @@
     "symfony/process": "^3.0",
     "symfony/css-selector": "^3.0",
     "symfony/browser-kit": "^3.0",
-    "nategood/httpful": "^0.2.20",
-    "symfony/http-foundation": "^3.0"
+    "symfony/http-foundation": "^3.0",
+    "geerlingguy/ping": "^1.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "doctrine/dbal": "^2.5"
   }
 }
